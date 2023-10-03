@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+</head>
+<body>
+    <fieldset>
+        <form>
+        
+            <h1>Event Registration</h1>
+
+            <!-- for text -->
+            <label for="name1">Name :</label> 
+            <input type="text" id="name1" name="name"> <br> <br>
+
+            <!-- for email -->
+            <label for="email1">Email :</label>
+            <input type="email" id="email1" name="email"> <br><br>
+
+            <!-- for telephone -->
+            <label for="phone1">Phone no :</label>
+            <input type="tel" id="phone1" name="Phone"><br><br>
+
+            <!-- for dropdown -->
+            <label for="role">Occupation :</label>
+            <select name="Role" id="role">
+                <option value="SDE">SDE</option>
+                <option value="developer">developer</option>
+                <option value="HR">HR</option>
+            </select><br> <br>
+
+
+            <!-- for checkbox -->
+           <legend> Topics of interest : </legend> <br><!--for every element there is separate label -->
+
+            <label for="subject1"></label>
+            <input type="checkbox" id="subject1">DBMS
+
+            <label for="subject2"></label>
+            <input type="checkbox" id="subject2">OS
+
+            <label for="subject3"></label>
+            <input type="checkbox" id="subject3">Android
+
+            <label for="subject4"></label>
+            <input type="checkbox" id="subject4">CN <br><br>
+
+            <label for="comment">Comments :</label><br>
+            <textarea name="comment" id="comment" cols="50" rows="10"></textarea> <br><br>
+
+            <label for="register"></label>
+            <input type="submit" id="register" name="register" value="register">  <!--note : button can be created in 2 ways : by input tag and button tag
+            while using input tag make use of value that will come on the button--> <br><br>
+
+
+            <!-- for radiobutton -->
+            <label for="radio">Gender :</label>
+
+            <input type="radio" id="radio1" name="radiobutton">
+            <label for="radio1">Male</label>
+           
+            <input type="radio" id="radio2" name="radiobutton">
+            <label for="radio2">Female</label> <br><br>
+            
+
+            <!-- for password -->
+            <label for="pwd">Enter password : </label>
+            <input type="password" id="pwd"> <br><br>
+
+
+            <!-- for date -->
+            <label for="date">Pick the date : </label>
+            <input type="date" id="date"> <br><br>
+
+
+            <!-- for time -->
+            <label for="time1">Time : </label>
+            <input type="time" id="time1"><br><br>
+
+
+            <!-- datetime-local -->
+            <label for="time2">Time : </label>
+            <input type="datetime-local" id="time2"><br><br>
+
+
+            <!-- for number -->
+            <label for="number">Age : </label>
+            <input type="number" id="number1" min="21" max="50"><br><br>
+
+            <!-- for image as button -->
+            <label for="image"></label>
+            <input type="image" name="img" id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjalScZDaqk1PHS839Yh7N72n3j0o8771qXg&usqp=CAU" alt="button" height="50" width="50">
+
+            
+
+            
+
+        </form>
+    </fieldset>
+</body>
+</html>
