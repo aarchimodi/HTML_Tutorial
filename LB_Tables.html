@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- what is class ?
+    suppose there are 4 para in the web page and u want to colour them as green, there are 2 options :
+1) one by one you do styling of paragraph  OR
+2) u create one class and and give styling and it will be applied to all the 4 para
+
+-->
+
+
+<!--  article + section and hit tab : 2 tags will be created with this short cut -->
+
+<article></article>
+<section></section>
+
+
+<!-- for nesting :  p>a hit tab 
+ul>(li>p>a)*7-->
+<p><a href=""></a></p>
+
+<!-- for creating id : p# hit tab -->
+<p id=""></p>
+
+<!-- for creating class : p. hit tab-->
+<p class=""></p>
+
+<!-- for creating div tag's class : .p hit tab -->
+<div class="p"></div>
+
+
+<!-- how to know whether elemnt is block or inline? -->
+<div style = "background-color: aqua;">This is block elemnt div</div> <br> <br >
+
+<span style = "background-color: yellowgreen;">This is inline element span</span>
+
+
+
+<!-- the main diffreence btw inline and block is that now if u create another span it will be created on the same line wheraes block element starts rom the next line -->
+<div class="" style="display: inline; background-color: aqua;" >first para</div>
+
+
+<nav>
+    <!--display: flex will bring nav elements horizontally
+      list-style-type: none will remove the bullet points -->
+    <ul style="display: flex; list-style-type: none;" > 
+        <li><a href="">Home</a></li>
+        <li><a href="">About us</a>
+        <li><a href="">Contact </a> </li>
+        <li><a href="">Login </a></li>
+    </ul>
+</nav>
+
+
+<table border="1"> <!--border="1" will make the table visible on web page -->
+<thead>
+    <th>Name</th>
+    <th>Id</th>
+    <th>Age</th>
+    <th>Gender</th>
+</thead>
+
+<tbody>
+    <tr>
+        <td>Aarchi</td>
+        <td>1290</td>
+        <td>23</td>
+        <td>F</td>
+    </tr>
+    <tr>
+        <td>Rhythm</td>
+        <td>2345</td>
+        <td>21</td>
+        <td>M</td>
+    </tr>
+    <tr>
+        <td>Kavya</td>
+        <td>4345</td>
+        <td>19</td>
+        <td rowspan="2">F</td>
+    </tr>
+    <tr>
+        <td>Vaibhav</td>
+        <td>9087</td>
+        <td>16</td>
+        <!-- <td>M</td> -->
+    </tr>
+</tbody>
+</table> <br> <br>
+
+<table border="1"> <!--border="1" will make the table visible on web page -->
+    <thead>
+        <th>Name</th>
+        <th>Id</th>
+        <th>Age</th>
+        <th>Gender</th>
+    </thead>
+    
+    <tbody>
+        <tr>
+            <td colspan = "4">Aarchi</td>
+            <!-- <td>1290</td>
+            <td>23</td>
+            <td colspan = "4">F</td> -->
+        </tr>
+        <tr>
+            <td>Rhythm</td>
+            <td>2345</td>
+            <td>21</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td>Kavya</td>
+            <td>4345</td>
+            <td>19</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>Vaibhav</td>
+            <td>9087</td>
+            <td>16</td>
+            <!-- <td>M</td> -->
+        </tr>
+    </tbody>
+    </table><br><br>
+    
+
+    <table border = "1">
+        <thead>
+            <th>col1</th>
+            <th>col2</th>
+            <th>col3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan = "2">Row 1 Cell1</td>
+                <td >Row 1 Cell2</td>
+                <td>Row 1 Cell3</td>
+            </tr>
+            <tr>
+                <td>Row 2 cell1</td>
+                <td>Row 2 cell3</td>
+            </tr>
+            <tr>
+                <td colspan = "3">Row 3 cell 1</td>
+            </tr>
+        </tbody>
+    </table> <br> <br>
+
+<table border = "1">
+    <thead>
+        <th>No.</th>
+        <th>Full Name</th>
+        <th>Position</th>
+        <th>Salary</th>
+        <th>Type</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>    
+            <td>Bill Gates</td>  
+            <td>Founder Microsoft</td>  
+            <td>33333</td>  
+            <td rowspan = 4>Company master</td>
+        </tr>
+        <tr>
+            <td>2</td>    
+            <td>Stecve jobs</td>  
+            <td>Founder apple</td>  
+            <td>33333</td>  
+        </tr>
+        <tr>
+            <td>3</td>    
+            <td>Mark Zuckerberg</td>  
+            <td>Founder fb</td>  
+            <td>33333</td>  
+        </tr>
+        <tr>
+            <td>4</td>    
+            <td>Larry Page</td>  
+            <td>Founder Google</td>  
+            <td>33333</td>  
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan = "3">Total</td>
+            <td>686969</td>
+        </tr>
+    </tfoot>
+
+
+</table><br><br>
+
+
+
+
+
+<!-- how many rows are there excluding headers? 
+    - 10
+    - create 10 tr
+
+    how many headers are there?
+    - 7
+    - create 7 th -->
+
+
+
+
+
+
+<table border = "1">
+    <thead>
+        <th>Country</th>
+        <th>state</th>
+        <th>city</th>
+        <th>street</th>
+        <th>male</th>
+        <th>female</th>
+        <th>others</th>
+
+    </thead>
+
+    <tbody>
+        <!-- now see how many data is there in 1st row?
+    - 1st row contains 7 data
+    - create 7 td
+    - 1st td "1" occupies the space of 8 rows so rowspan="8"
+    - then check 2nd td that is "kerala" which occupies the space of 4 rows so rowspan="4"
+    - then 3rd td "Cochin" occupies the space of 2 rows so rowspan="2" 
+    - now 4th td and so on
+    - done with our first row
+ --> 
+        <tr>
+            <td rowspan="8">1</td>
+            <td rowspan="4">Kerala</td>
+            <td rowspan="2">Cochin</td>
+            <td>New street</td>
+            <td>500</td>
+            <td>600</td>
+            <td>6</td>
+        </tr>
+
+
+
+        <!-- Now lets check for 2nd row :
+        - it has 4 td  -->
+
+        <tr>
+            <td>Main street</td>
+            <td>300</td>
+            <td>288</td>
+            <td>2</td>
+
+        </tr>
+
+
+
+        <!-- 3rd row has 5 td :
+        - "Trivandrum" is expanding 2 rowsso rowspan="2"  -->
+        <tr>
+            <td rowspan="2">Trivandrum</td>
+            <td>Guru street</td>
+            <td>500</td>
+            <td>600</td>
+            <td>10</td>
+
+        </tr>
+
+
+        <!-- 4th row has 4 td -->
+        <tr>
+            <td>TVK street</td>
+            <td>500</td>
+            <td>600</td>
+            <td>2</td>
+        </tr>
+
+
+        <!-- 5th row has 6 td 
+        - "Maharstra" is expanding 4 rows so rowspan="4" 
+        - "mumbai" is expanding 2 rows so rowspan="2" -->
+        <tr>
+            <td rowspan = "4">Maharastra</td>
+            <td rowspan = "2">Mumbai</td>
+            <td>Krishna street</td>
+            <td>700</td>
+            <td>850</td>
+            <td>1</td>
+        </tr>
+
+        <!-- 6th row has 4 td -->
+        <tr>
+            <td>Main street</td>
+            <td>500</td>
+            <td>600</td>
+            <td>2</td>
+        </tr>
+
+        <!-- 7th row has 5 td
+        - "surat" is expanding 2 rows so rowspan="2" -->
+        <tr>
+            <td rowspan="2">surat</td>
+            <td>New street</td>
+            <td>500</td>
+            <td>600</td>
+            <td>4</td>
+        </tr>
+
+        <!-- 8th row has 4 td -->
+        <tr>
+            <td>Billa street</td>
+            <td>500</td>
+            <td>600</td>
+            <td>4</td>
+        </tr>
+
+        <!-- 9th row has 7 td -->
+        <tr>
+            <td rowspan="2">2</td>
+            <td rowspan="2">Alaska</td>
+            <td rowspan="2">AKA central</td>
+            <td>new street</td>
+            <td>200</td>
+            <td>210</td>
+            <td>2</td>
+        </tr>
+
+        <!-- 10th row has 4 td -->
+        <tr>
+            <td>cross steet</td>
+            <td>1000</td>
+            <td>1050</td>
+            <td>10</td>
+
+        </tr>
+    </tbody>
+</table>
+
+
+
+<table border="1">
+    <thead>
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+
+        <tr>
+            <th colspan="2">Shcedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+            <th>Begin</th>
+        <th>End</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8</td>
+            <td rowspan="2">5</td>
+            <td>html</td>
+
+        </tr>
+
+        <tr>
+            <td>css</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">tuesday</td>
+            <td>8</td>
+            <td>11</td>
+            <td>c++</td>
+        </tr>
+
+        <tr>
+            <td>11</td>
+            <td>2</td>
+            <td rowspan="2">Xml</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>5</td>
+           
+        </tr>
+
+        <tr>
+            <td>wednesday</td>
+            <td>8</td>
+            <td>12</td>
+            <td>js</td>
+        </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>
