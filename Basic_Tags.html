@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+   <!-- heading tag -->
+<header>  <!--making use of semantic tags improves SEO, layout and ranking of the website-->
+    <h1> Heading 1 </h1>
+    <h2> heading 2</h2>
+    <h3> heading 3</h3>
+    <h4> heading 4</h4>
+    <h5> heading 5</h5>
+    <h6> heading 6</h6>
+</header>
+
+
+
+
+    <main> <!--inside main we have 3 more tags namely <section>, <article> and <aside>-->
+        <section> <!--to give sections to our websites-->
+            <!-- paragraph tag -->
+            <p>Sample program</p>
+        </section>
+
+
+
+        <section>
+            <!-- anchor tag -->
+            <a href = "https://www.google.com/"> Google</a> <br><!--href : hypertext reference means indicates the relationship between pages to search engines.-->
+            
+            <a href = "https://www.google.com/"    target="_blank"> Blank will open in new window</a> <br>
+            <a href = "https://www.google.com/"    target="_main"> Main will open in new window</a> <br>
+            <a href = "https://www.google.com/"    target="_self"> self opens in the same window</a> <br> 
+            <a href = "https://www.w3schools.com/" target="_parent">Parent opens in the same window</a><br>
+            <a href = "https://www.w3schools.com/" target="_top">Top opens in the same window</a><br>
+            <a href = "https://www.google.com/"    target="_main"> 
+                <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIcgO7HC3DLK3Ni7fJfVQbTiEE5n6CU9y-GEr0wdN2uW11TTA1LJ8fwSdp7DrJtGlnpHc&usqp=CAU" alt = "Google" width="100">  <!-- to make image clickable-->
+            </a> <br> 
+            
+            <!-- here href is an attribute and https://www.google.com/ is the value assigned to it similarly target is an attribute used to specify how the linked page should open when a user clicks on the link-->
+
+
+            <!-- there are 2 types of links/url :  -->
+            <a href = "/C++/datatypes.cpp">cppprac</a>  <br><!--relative link-->
+            <a href = "https://www.google.com/>">google</a> <br> <!--absolute link-->
+            <br>
+        </section>
+
+
+
+        <section>
+            <!-- img tag -->
+            <img src="https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg?w=2000" alt = "flower" height="100" > <br>
+            <!-- here alt refers to alternative for suppose if internet is not working user can get a idea of what image it is  -->
+            <!-- height refers to size of the image -->
+            <!-- note : never include both height and width at the same time it will spoil the image -->
+            <img src = "sunset.jpg" alt="sunset" height = "100"><br> <br>
+        </section>
+
+
+    
+        <section>
+            <!-- bold/italic/underline tag -->
+            <b>bold</b> <br>
+            <i>italic</i> <br>
+            <u>underline</u><br>
+            <p>Sample <u>program</u> sample</p>
+        </section>
+
+
+        <section>
+            <!-- Big/ small /hr tag -->
+            <big>This is big text</big><br>
+            <hr>
+            <small>This is small text</small><br><br>
+        </section>
+
+
+        <section>
+            <!-- subscript/superscript tag -->
+            H<sub>2</sub>O<br><br>
+            3<sup>2</sup> = 9<br>
+        </section>
+
+
+
+        <article>
+             The article Tag represents a complete, composition/story in the document 
+        </article><br>
+
+
+        <aside>This tag has nothing to do with our main content.This element defines some content aside from the content it is placed in (like the ads we see on the website).
+        </aside><br>
+
+
+
+        <section>
+            <!-- div tag -->
+            <div>
+                <p> div tag defines a division or a section in an HTML document and requires whole space. </p>
+            </div>
+
+            <div>
+                This is div 2 
+            </div>
+        </section>
+
+
+
+
+        <section>
+            <!-- span tag -->
+            <span>span tag only ocuupies the required width/space</span>
+        </section>
+
+
+
+
+
+        <section>
+            <!-- unordered list -->
+            <h4>Menu</h4>
+            <ul>
+                <li>Gujarati</li>
+                <ul type = "square">
+                    <li>Khaman</li>
+                    <li>Dhokla</li>
+                </ul>
+                <li>South Indian</li>
+                <ul type = "disc"> <!--by default it is disc-->
+                    <li>Idli</li>
+                    <li>Dosa</li>
+                </ul type = "circle">
+                <li>Punjabi</li>
+                <ul>
+                    <li>Naan</li>
+                    <li>Dal Makhni</li>
+                </ul>
+            </ul>
+        </section>
+
+
+
+
+        <section>
+            <!-- ordered list -->
+            <h4>Ordered Lists</h4>
+            <ol>
+                <li>Languages</li>
+                <ol type = "1">  <!--by default type-->
+                    <li>C++</li>
+                    <li>Java</li>
+                </ol>
+                <li>Os</li>
+                <ol type = "A">
+                    <li>Windows</li>
+                    <li>Mac</li>
+                </ol>
+                <li>Sql</li>
+                <ol type = "a">
+                    <li>MongoDb</li>
+                    <li>Oracle</li>
+                </ol>
+                <li>Data Structures</li>
+                <ol type = "I">
+                    <li>Arrays</li>
+                    <li>Stack</li>
+                </ol>
+            </ol>
+        </section>
+
+
+
+        <section>
+            <!-- form tag -->
+            <form action = "action.php"> <!--Forms are used to collect user input data and submit it to a server for processing.
+            action attribute specifies the URL or file where the form data will be sent when the user submits the form. In this case, the form data will be sent to a file called "action.php" on the server.-->
+
+            <input type = "text" placeholder = "Username"><br><br>
+            <input type = "password" placeholder = "Password">
+                
+            </form>
+        </section>
+
+
+
+    </main>
+
+
+    
+        <footer>
+            
+
+
+            <!-- pre tag : text will be displayed exactly as written in the HTML source code considering space and line breaks. -->
+            <pre>Lorem 
+                Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</pre>
+
+
+        </footer>
+</body>
+</html>
