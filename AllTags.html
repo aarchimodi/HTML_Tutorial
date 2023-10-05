@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- for linking favicon -->
+    <link rel = "shortcut icon" href = "favicon.ico" type="image/x-icon">   
+    <title>Original Practice (all tags)</title>
+</head>
+<body>
+
+
+
+
+
+   <!--1) h1-h6 and header tag -->
+
+<header>  <!--making use of semantic tags improves SEO, layout and ranking of the website-->
+    <h1 style = "background-color : red"> Heading 1 </h1>    <!--style is an attribute bg color is the value-->
+    <h2 style = "background-color: brown;"> heading 2</h2>
+    <h3> heading 3</h3>
+    <h4> heading 4</h4>
+    <h5> heading 5</h5>
+    <h6> heading 6</h6>
+</header>
+
+
+
+
+    <main> <!--inside main we have 3 more tags namely <section>, <article> and <aside>-->
+        <section> <!--to give sections to our websites-->
+
+
+            <!--2) paragraph tag -->
+            <p>Sample program</p>
+
+            <!-- 3), bold, strong, em tag :
+                - bold will mark the text as visually bold 
+                - strong will mark the text as important and bold
+                - em will verbally emphasize on the text for screen readers  --> 
+
+            <p>Lorem,<b>ipsum</b> ipsum dolor sit amet <strong>consectetur</strong> adipisicing elit. Inventore voluptate, voluptas amet <em>consectetur</em> eaque placeat veritatis rem quae, laborum fugit similique. <s>Ipsum</s>, cupiditate? Molestiae quae inventore, quisquam incidunt cumque dolore?
+            </p> 
+
+
+
+
+            <!-- 4)<s> and strike tag -  
+                - both <s> and <strike> can be used to apply strikethrough formatting to text in HTML,
+                -  but <s> is the preferred choice in modern HTML for indicating text that is no longer relevant or accurate.
+                - <s> tag has been introduced as a replacement for the <strike> tag in HTML5-->
+            <p>
+                Lorem <s>foldo</s> dolor sit amet.
+            </p>
+
+            <p>
+                <strike>jdfshkhsks</strike>
+            </p>
+            <!--Note : type lorem30 in p tag and 30 words will be displayed -->
+
+        </section>
+
+
+
+        <section>
+            <!--5) anchor tag : Links are fundamental to navigating the web. In HTML, links are created using the <a> tag, also known as the Anchor tag.
+
+                HTML links primarily use two attributes:
+
+                href attribute: Defines the URL the link points to.
+                target attribute: Specifies where to open the linked document.
+                
+            - href : hypertext reference means indicates the relationship between pages to search engines-->
+            <a href = "https://www.google.com/"> Google</a> <br>
+            
+            <a href = "https://www.google.com/"    target="_blank"> Blank will open in new window</a> <br>
+            <a href = "https://www.google.com/"    target="_main"> Main will open in new window</a> <br>
+            <a href = "https://www.google.com/"    target="_self"> self opens in the same window</a> <br> 
+            <a href = "https://www.w3schools.com/" target="_parent">Parent opens in the same window</a><br>
+            <a href = "https://www.w3schools.com/" target="_top">Top opens in the same window</a><br>
+            
+
+            <!-- to make image clickable-->
+            <a href = "https://www.google.com/"    target="_main"> 
+                <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIcgO7HC3DLK3Ni7fJfVQbTiEE5n6CU9y-GEr0wdN2uW11TTA1LJ8fwSdp7DrJtGlnpHc&usqp=CAU" alt = "Google" width="100">  
+            </a> <br> 
+            
+            <!-- here href is an attribute and https://www.google.com/ is the value assigned to it similarly target is an attribute used to specify how the linked page should open when a user clicks on the link-->
+
+
+            <!-- there are 2 types of links/url :  -->
+            <a href = "/C++/datatypes.cpp">cppprac</a>  <br><!--relative link-->
+            <a href = "https://www.google.com/>">google</a> <br> <!--absolute link-->
+            <br>
+        </section>
+
+
+
+        <section>
+            <!-- 6) img tag -->
+            <img src="https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg?w=2000" alt = "flower" height="100" > <br>
+            <!-- here alt refers to alternative for suppose if internet is not working user can get a idea of what image it is  -->
+            <!-- height refers to size of the image -->
+            <!-- note : never include both height and width at the same time it will spoil the image -->
+            <!-- always copy link address of the image -->
+            <img src = "sunset.jpg" alt="sunset" height = "100"><br> <br>
+        </section>
+
+<p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam dolorem natus consequuntur accusantium fuga, maxime vero eveniet placeat culpa. Facere repudiandae minus incidunt error, illo &nbsp; ipsa voluptate repellat quas ipsam?   <!--7) &nbsp creates a little space-->
+</p>
+    
+        <section>
+            <!--8) bold/italic/underline tag -->
+            <b>bold</b> <br>
+            <i>italic</i> <br>
+            <u>underline</u><br>
+            <p>Sample <u>program</u> sample</p>
+        </section>
+
+
+        <section>
+            <!--9) Big/ small /hr tag -->
+            <big>This is big text</big><br>
+            <hr>
+            <small>This is small text</small><br><br>
+        </section>
+
+
+        <section>
+            <!-- 10)subscript/superscript tag -->
+            H<sub>2</sub>O<br><br>
+            3<sup>2</sup> = 9<br>
+
+            <!-- 11) &rarr; is used to bring arrow -->
+            C + O<sub>2</sub> &rarr; CO<sub>2</sub>
+        </section>
+
+
+
+        <!-- 12)article tag -->
+        <article>
+             The article Tag represents a complete, composition/story in the document 
+        </article><br>
+
+        <!-- 13)aside tag -->
+        <aside>This tag has nothing to do with our main content.This element defines some content aside from the content it is placed in (like the ads we see on the website).
+        </aside><br>
+
+
+
+        <section>
+            <!-- 14)div tag -->
+            <div>
+                <p> div tag defines a division or a section in an HTML document and requires whole space. </p>
+            </div>
+
+            <div>
+                This is div 2 
+            </div>
+        </section>
+
+
+
+
+        <section>
+            <!-- 15)span tag -->
+            <span>span tag only ocuupies the required width/space</span>
+        </section>
+
+
+
+
+        <!-- 16)list tags : There are 3 types of list : ul, ol, dl(dt and dd)-->
+        <section> 
+            <!-- unordered list -->
+            <h4>Menu</h4>
+            <ul type = "circle">
+                <li>Gujarati</li>
+                <ul type = "square">
+                    <li>Khaman</li>
+                    <li>Dhokla</li>
+                </ul>
+                <li>South Indian</li>
+                <ul type = "disc"> <!--by default it is disc-->
+                    <li>Idli</li>
+                    <li>Dosa</li>
+                </ul>
+                <li>Punjabi</li>
+                <ul type = "circle">
+                    <li>Naan</li>
+                    <li>Dal Makhni</li>
+                </ul>
+            </ul>
+        </section>
+
+
+           
+
+        <section>
+            <!-- ordered list -->
+            <!-- ol>li*3 type this and 3 li will be displayed because of emmet -->
+            <h4>Ordered Lists</h4>
+            <ol>
+                <li>Languages</li>
+                <ol type = "1">  <!--by default type-->
+                    <li>C++</li>
+                    <li>Java</li>
+                </ol>
+                <li>Os</li>
+                <ol type = "A">
+                    <li>Windows</li>
+                    <li>Mac</li>
+                </ol>
+                <li>Sql</li>
+                <ol type = "a">
+                    <li>MongoDb</li>
+                    <li>Oracle</li>
+                </ol>
+                <li>Data Structures</li>
+                <ol type = "I">
+                    <li>Arrays</li>
+                    <li>Stack</li>
+                </ol>
+            </ol>
+
+
+
+            <dl>
+                <dt>Mumbai</dt> <dd>it's the best place to visit in maharastra</dd>
+                <dt>ahm</dt> <dd>it's the best place to visit in Gijarat</dd>
+            </dl>
+        </section>
+       
+
+        <!-- 17)code tag writes text in code format-->
+        <code>
+            push and pop
+        </code>
+
+        <base href="https://www.example.com/" />
+
+
+
+        <section>
+            <!-- 18)table tag -->
+            <!-- table>(tr>td*3)*3   -->
+            <table>
+
+                <!-- 19)caption tag : just like captions in photos tells abt what's in the photo similarly this tag tells abt what's in the table -->
+                <caption>Menu Data</caption> 
+                
+                <thead>
+                    <tr>
+                        <th>Items</th>
+                        <th>Expenditure</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Donut</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>Cheesecake</td>
+                        <td>200</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>500</td>
+                    </tr>
+                </tfoot>
+            </table><br>
+
+            <table>
+                <!-- Now suppose we have only one table header and 2 columns and want to merge thsese 2 columns , colspan attribiute brings together 2 columns (kitne columns ki jagah ye header lene vala hai is defined by colspan)-->
+                <tr>
+                    <th colspan = "2">Menu data</th>
+                </tr>
+                <tr>
+                    <td>Items</td>
+                    <td>Expenditure</td>
+                </tr>
+            </table>
+        </section>
+
+
+
+        <section>
+            <marquee>this is marquee tag</marquee>
+        </section>
+
+        <mark>This is a mark tag</mark>
+
+
+
+
+        <section>
+            <!-- 20)form tag -->
+            <form action = "action.php"> <!--Forms are used to collect user input data and submit it to a server for processing.
+            action attribute specifies the URL or file where the form data will be sent when the user submits the form. In this case, the form data will be sent to a file called "action.php" on the server.-->
+                <!-- The action attribute indicates where form data should be sent. -->
+
+            <!-- form has element attribute called input  -->
+
+            <!-- The input element allows you several ways to collect data from a web form. Like img elements, input elements are self-closing and do not need closing tags. -->
+            <input type = "text" placeholder = "Username"><br><br> <!--The type attribute is set to "text" to create a text input, and the placeholder attribute provides a hint or placeholder text for the user.-->
+            <input type = "password" placeholder = "Password"><br>
+
+            <input type = "radio" value = "Python" name = "class">Python 
+            <input type = "radio" value = "Java"   name = "class" >Java
+            <!--radiobutton does not have placeholder attribute instead it has value and name.
+            1) make sure that the value u give is in sync with the value you are printing because value attribute gives info to backend and the value you are printing will be shown from the frontend
+            2) name attribute in the radiobutton will allow us to choose only for one option  -->
+                
+
+            <label for = "form1"> <!--21) The <label> tag is used to specify a label for an <input> element of a form. It adds a label to a form control such as text, email, password, textarea etc. It toggles the control when a user clicks on a text within the <label> element. good for Screen reader users. also if u click on only text part even then the radiobutton will be selected for the people who cannot see clearly-->
+                <!-- label has 2 attributes : for and form -->
+                <!-- "for" attribute of label and "id" attribute of input tag should be same -->
+
+
+                <!-- id attribute : is used for unique identification of elements within the web page, mainly for targeting and manipulation via CSS and JavaScript -->
+
+                <!--  In order for a form's data to be accessed by the location specified in the action attribute, you must give the text field a name attribute and assign it a value to represent the data being submitted.-->
+                <input type = "radio" value = "c++" name = "class" id = "form1">c++
+            </label>
+
+            <label for = "form2"> <!--har ek input tag nu label hovu jaoiye-->
+                <input type = "radio" value = "html" name = "class" id = "form2">html
+
+                <!-- To prevent a user from submitting your form when required information is missing, you need to add the required attribute to an input element. There's no need to set a value to the required attribute. Instead, just add the word required to the input element, making sure there is space between it and other attributes. -->
+            </label><br><br>
+
+
+            <label>
+
+                <!-- 22) Textarea tag : this tag is used to define a multi-line text input control.-->
+                <!-- textarea is defined by <cols> and <rows> attribute, or it can also be defined through CSS height and width properties to widen the space. --> 
+                <textarea cols = "20" rows = "5" placeholder="feedback">Provide feedback</textarea>  <br>
+
+            </label>
+
+            <!--23)select tag:  dropdown menu -->
+            <select name = "city"> 
+                <option value = "Mumbai">Mumbai</option>
+                <option value = "Delhi">Delhi</option>
+                <option value = "Pune">Pune</option>
+            </select>
+
+            <label>
+                <input type = "submit" value = "submit">
+            </label>
+
+            <label>
+                <input type = "submit" value = "submit">
+            </label>
+            </form><br><br>
+        </section>
+
+            <section>
+                <!--24) iframe(inline frame) tag is used to embed another document(website) within the current HTML document(website).-->
+                <iframe src = "https://www.wikipedia.org/" height = "100" width = "350"></iframe>
+                <iframe src = "https://www.youtube.com/embed/HcOc7P5BMi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>"   <!--go to share and embed-->
+            </section>
+
+
+                <!-- 25)video tag -->
+                <video src = "E:\Html Tutorial\recording.mov" width = "350" height = "100" controls >My video</video>
+                <!-- controls attribute plays the video -->
+
+
+
+
+            <!-- 26)abbr tag is used to provide the full form of the texts whenever you hover the mouse over the html part a full form will be displayed -->
+           <p>
+            <abbr title="hypertext markup language">Html</abbr> is the markup languange
+           </p>     
+
+
+
+
+           <!-- 27) Address tag: The contact details for author of a page is specified by <address> attribute. The content is often displayed in italics, -->
+           <p>
+            <address>c/24,301</address> is my address.
+           </p>
+
+           <address>
+            <a href="mailto:enquiry@sanfoundry.com">Sanfoundry</a>
+            </address>
+
+            <!-- 28)q tag : will insert double quotes-->
+            <q>Hello</q>
+
+            <!-- 29) blockquote tag :  -->
+            <blockquote cite="https://www.huxley.net/bnw/four.html">
+                <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+                —Aldous Huxley, <cite>Brave New World</cite>
+              </blockquote>
+              
+
+              <!-- 30)ins tag : -->
+              <ins>This is inserted text</ins><br>
+
+
+              <!-- 31)del tag : -->
+              <del>This is deleted text</del><br>
+
+
+              <!-- 32)kbd tag  : represents text denoting textual user input from a keyboard, voice input, or any other text entry device. -->
+              <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
+
+           
+
+              <!-- figure  tag : -->
+              <!-- note : figcaption tag must be always enclosed within the figure element -->
+           
+
+    </main>
+
+
+    
+        <footer>
+            
+
+
+            <!-- pre tag : text will be displayed exactly as written in the HTML source code considering space and line breaks. -->
+            <pre>Lorem 
+                Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</pre>
+
+
+        </footer>
+</body>
+</html>
